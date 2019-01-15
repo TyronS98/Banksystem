@@ -1,6 +1,4 @@
-#include <array>
 #include <iostream>
-#include <thread>
 
 #include "Bank.h"
 

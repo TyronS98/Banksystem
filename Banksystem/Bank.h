@@ -3,7 +3,7 @@
 
 class cBank {
 public:
-	bool MoneyDraw(int p_iBetrag, bool p_iWithdraw);
+	bool MoneyDraw(int p_iBetrag, bool p_bWithdraw);
 	bool Zugriffsberechtigung(std::string p_szBenutzername, std::string p_szPIN);
 	void Init(std::string p_szBenutzername, std::string p_szPIN, int p_iKontostand);
 	void GetKontostand();

@@ -42,12 +42,12 @@ bool cBank::Zugriffsberechtigung(std::string p_szBenutzername, std::string p_szP
 	return false;
 };
 
-bool cBank::MoneyDraw(int p_iBetrag, bool p_Bwithdraw) {
-	if (iKontostand >= p_iBetrag && p_Bwithdraw) {
+bool cBank::MoneyDraw(int p_iBetrag, bool p_bWithdraw) {
+	if (iKontostand >= p_iBetrag && p_bWithdraw) {
 		iKontostand -= p_iBetrag;
 		return true;
 	}
-	else if(!p_Bwithdraw){
+	else if(!p_bWithdraw){
 		iKontostand += p_iBetrag;
 		return true;
 	}
